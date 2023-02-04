@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from chopin device
 $(call inherit-product, device/xiaomi/chopin/device.mk)
@@ -23,7 +23,6 @@ PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vnd_chopin-user 12 SP1A.210812.016 V14.0.22.12.8.DEV release-keys"
-
-BUILD_FINGERPRINT := redmi/vnd_chopin/chopin:12/SP1A.210812.016/V14.0.22.12.8.DEV:user/release-keys
+# HACK: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
