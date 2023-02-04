@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/chopin.mk
+    $(LOCAL_DIR)/twrp_chopin.mk
 
 COMMON_LUNCH_CHOICES := \
-    chopin-user \
-    chopin-userdebug \
-    chopin-eng
+    twrp_chopin-user \
+    twrp_chopin-userdebug \
+    twrp_chopin-eng
