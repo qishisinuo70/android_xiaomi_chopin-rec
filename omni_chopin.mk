@@ -16,7 +16,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/xiaomi/chopin/device.mk)
 
 PRODUCT_DEVICE := chopin
-PRODUCT_NAME := omni_chopin
+PRODUCT_NAME := chopin
 PRODUCT_BRAND := redmi
 PRODUCT_MODEL := chopin
 PRODUCT_MANUFACTURER := xiaomi
