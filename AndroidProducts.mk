@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_chopin.mk
+    $(LOCAL_DIR)/chopin.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_chopin-user \
-    omni_chopin-userdebug \
-    omni_chopin-eng
+    chopin-user \
+    chopin-userdebug \
+    chopin-eng
